@@ -14,36 +14,28 @@ struct NavigationSteps {
     @discardableResult
     init() {
 
-        Given("^I am on the First screen$") { (args, userInfo) in
-
-        }
-
-        Given("^I am on the Second screen$") { (args, userInfo) in
-
+        Given("^I am on the (.*) screen$") { (args, userInfo) in
+            let screen = args![0]
+            SStep(nil, "I navigate to the \(screen) screen")
+            SStep(nil, "I should be on the \(screen) screen")
         }
 
         Given("^the application is launched$") { (args, userInfo) in
             SStep(nil, "I launch the application")
         }
 
-        Then("^I should be on the First screen$") { (args, userInfo) in
-
-        }
-
-        Then("^I should be on the Second screen$") { (args, userInfo) in
-
-        }
-
         When("^I launch the application$") { (args, userInfo) in
             XCUIApplication().launch()
         }
 
-        When("^I navigate to the First screen$") { (args, userInfo) in
-
+        When("^I navigate to the (.*) screen$") { (args, userInfo) in
+            let screen = args![0]
+            XCUIApplication().tabBars.buttons[screen].firstMatch.tap()
         }
 
-        When("^I navigate to the Second screen$") { (args, userInfo) in
-
+        Then("^I should be on the (.*) screen$") { (args, userInfo) in
+            let screen = args![0]
+            XCTAssert(XCUIApplication().staticTexts[screen + " View"].exists, "I am not on the \(screen) screen")
         }
 
     }

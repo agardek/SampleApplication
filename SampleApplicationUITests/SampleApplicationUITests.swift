@@ -17,7 +17,7 @@ import XCTest
         Cucumberish.instance().featureNamesPrefix = ""
         Cucumberish.instance().prettyNamesAllowed = true
 
-        Cucumberish.instance().dryRun = true
+        Cucumberish.instance().dryRun = false
         Cucumberish.instance().dryRunLanguage = .swift
 
         NavigationSteps();
