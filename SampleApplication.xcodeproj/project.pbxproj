@@ -45,6 +45,7 @@
 		F36D208E1F289982000EC591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F36D20971F289B39000EC591 /* SampleApplicationUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleApplicationUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		F36D20981F289B3A000EC591 /* SampleApplicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleApplicationUITests.m; sourceTree = "<group>"; };
+		F36D209E1F28A664000EC591 /* navigation.feature */ = {isa = PBXFileReference; lastKnownFileType = text; path = navigation.feature; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +133,7 @@
 		F36D209D1F289CE3000EC591 /* Scenarios */ = {
 			isa = PBXGroup;
 			children = (
+				F36D209E1F28A664000EC591 /* navigation.feature */,
 			);
 			path = Scenarios;
 			sourceTree = "<group>";
