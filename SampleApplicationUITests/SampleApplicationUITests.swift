@@ -17,7 +17,7 @@ import XCTest
         Cucumberish.instance().featureNamesPrefix = ""
         Cucumberish.instance().prettyNamesAllowed = true
 
-        Cucumberish.executeFeatures(inDirectory: "scenarios",
+        Cucumberish.executeFeatures(inDirectory: "Scenarios",
                                     from: Bundle(for: CucumberishInitializer.self),
                                     includeTags: nil,
                                     excludeTags: nil)
