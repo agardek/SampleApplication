@@ -17,6 +17,11 @@ import XCTest
         Cucumberish.instance().featureNamesPrefix = ""
         Cucumberish.instance().prettyNamesAllowed = true
 
+        Cucumberish.instance().dryRun = true
+        Cucumberish.instance().dryRunLanguage = .swift
+
+        NavigationSteps();
+
         Cucumberish.executeFeatures(inDirectory: "Scenarios",
                                     from: Bundle(for: CucumberishInitializer.self),
                                     includeTags: nil,

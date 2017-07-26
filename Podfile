@@ -4,7 +4,7 @@ platform :ios, '10.0'
 
 target 'SampleApplicationUITests' do
   use_frameworks!
-  pod 'Cucumberish'
+  pod 'Cucumberish', :git => 'https://github.com/TitouanVanBelle/Cucumberish.git', :branch => 'fyber'
 end
 
 post_install do |installer|

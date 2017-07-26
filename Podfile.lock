@@ -2,11 +2,21 @@ PODS:
   - Cucumberish (1.2.0)
 
 DEPENDENCIES:
-  - Cucumberish
+  - Cucumberish (from `https://github.com/TitouanVanBelle/Cucumberish.git`, branch `fyber`)
+
+EXTERNAL SOURCES:
+  Cucumberish:
+    :branch: fyber
+    :git: https://github.com/TitouanVanBelle/Cucumberish.git
+
+CHECKOUT OPTIONS:
+  Cucumberish:
+    :commit: c36a5886c0f1f476af220310bb519cc3f07296fc
+    :git: https://github.com/TitouanVanBelle/Cucumberish.git
 
 SPEC CHECKSUMS:
-  Cucumberish: ec9a8de7da10fc06e07e853edf82d9eadead70e0
+  Cucumberish: '009573d45e4529b6ce74cfa924f077c5786b8b1a'
 
-PODFILE CHECKSUM: cc305e4d203fc2848094aebedbef1b450333a83e
+PODFILE CHECKSUM: 0fef65bdbd739c53d3e700fd8646ab3dc871136b
 
 COCOAPODS: 1.2.1
