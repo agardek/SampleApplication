@@ -1,0 +1,12 @@
+PODS:
+  - Cucumberish (1.2.0)
+
+DEPENDENCIES:
+  - Cucumberish
+
+SPEC CHECKSUMS:
+  Cucumberish: ec9a8de7da10fc06e07e853edf82d9eadead70e0
+
+PODFILE CHECKSUM: cc305e4d203fc2848094aebedbef1b450333a83e
+
+COCOAPODS: 1.2.1
